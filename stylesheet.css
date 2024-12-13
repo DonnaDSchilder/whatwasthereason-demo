@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+} /*Padding en border worden mee gerekent in width en height, bron: w3schools.com*/
+
+/*Bron voor het toevoegen van notes: mimo.org*/
+
+ul {
+  list-style: none; /*Haalt de puntjes by de li items weg*/
+}
+
+header nav a {
+  text-decoration: none; /*Haalt de streep by de li items weg*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(28, 0, 16);
+  transition: all 150ms ease-in-out;
+}
+
+header nav ul {
+  display: flex; /*Zorgt ervoor dat ze naast elkaar komen */
+  padding: 0;
+  margin: 0;
+  justify-content: left;
+  font-size: 1rem;
+  align-items: center; /*Zorgt ervoor dat alles in de flexbox gecentreerd staat*/
+  text-wrap: wrap;
+  border-bottom: 4px solid rgb(127, 190, 232);
+}
+
+header nav li {
+  padding-left: 3em; /*Ruimte tussen de items*/
+}
+
+header nav img {
+  width: auto; /*Zodat de foto niet gestretched wordt*/
+  height: 50px;
+}
+
+header nav img {
+  width: auto; /*Zodat de foto niet gestretched wordt*/
+  height: 50px;
+}
+nav a:hover {
+  color: rgb(166, 58, 190);
+  cursor: pointer;
+}
+
+a.CurrentPage {
+  text-decoration: underline 0.1em;
+}
+
+body {
+  background-color: rgb(255, 244, 245);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 5em;
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+.subhead {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: small;
+  color: rgb(82, 82, 82);
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  margin: 0;
+  padding-top: 1em;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  margin: 0;
+  padding-top: 0.5em;
+  text-wrap: wrap;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.Video {
+  /*Bron:https://chatgpt.com/share/67599b94-7a08-800c-9c5c-8855e35ae5b9*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+}
+
+iframe {
+  width: 70em;
+  height: 42em;
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  overflow-wrap: break-word;
+  padding-right: 0;
+  padding-left:0;
+}
+
+.EpisodeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1em;
+  height: 100%;
+  padding-bottom: 1em;
+}
+
+.EpisodePreview {
+  display: flex;
+  height: fit-content;
+  width: 85vh;
+  background-color: #f2cbff;
+}
+
+.PreviewImage {
+  width: max-content;
+  height: max-content;
+  padding: 2em;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.EpisodeInfo > h3,
+p,
+h4 {
+  display: flex;
+  text-align: left;
+  padding-top: 2em;
+  max-width: 580em;
+  margin: 0;
+  text-wrap: wrap;
+}
+
+.EpisodeInfo > p {
+  padding-right: 2em;
+}
+
+.EpisodeInfo {
+  width: 50em;
+}
+
+.Playbutton {
+  width: 30px;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  transition: all ease-in-out 0.2s;
+}
+
+.Playbutton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.MerchImage {
+  display: grid;
+  place-items: center;
+  padding-bottom: 1em;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  width: 40em;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  gap: 2em;
+}
+
+.Buttons p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  background: #ff91da;
+  color: white;
+  width: 10em;
+  padding: 1em;
+  border-radius: 1em;
+  border-color: #a60d5c;
+  border-style: solid;
+  border-width: 0.2em;
+  align-content: center;
+  transition: all ease-in-out 0.2s;
+  text-align: center;
+}
+
+.Buttons p:hover {
+  background: #d14ea5;
+  border-style: solid;
+  border-color: #800d65;
+  cursor: pointer; /*Zorgt ervoor dat de cursor een pointer krijgt, hiermee laat je beter zien dat het klikbaar is. Bron: codepen.io*/
+  transform: scale(1.05);
+}
+
+.Buttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.GetToKnowUs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f4d9f7;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.GetToKnowUs img {
+  width: auto;
+  max-height: 300px;
+}
+
+.GetToKnowUs p {
+  justify-content: left;
+  text-align: left;
+  max-width: 50em;
+}
+
+.footer-container {
+  /*Bron:https://chatgpt.com/share/675a0856-5f3c-800c-a832-19b8ef0f7437*/
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 220, 224);
+  width: 100%;
+  height: 10rem;
+}
+
+.footer-right {
+  text-align: right;
+  padding-right: 3em;
+}
+.footer-right li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(28, 0, 16);
+  height: 2em;
+  transition: all 150ms ease-in-out;
+}
+
+.footer-right li:hover {
+  color: rgb(166, 58, 190);
+  cursor: pointer;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(28, 0, 16);
+}
+
+.footer-center li > img {
+  height: 20px;
+}
+
+.FooterLogo {
+  align-items: center;
+  justify-content: center;
+  width: auto; /*Zodat de foto niet gestretched wordt*/
+  height: 4em;
+  transition: all 150ms ease-in-out;
+}
+.FooterLogo:hover {
+  cursor: pointer; /*Zorgt ervoor dat de cursor een pointer krijgt, hiermee laat je beter zien dat het klikbaar is. Bron: codepen.io*/
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.SocialMedia img {
+    transition: all 150ms ease-in-out;
+  }
+
+.SocialMedia img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.footer-left {
+  justify-content: left;
+  text-align: left;
+  padding-right: 3em;
+}
+
+.footer-left li {
+  height: 2em;
+}
+
+.footer-left a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(28, 0, 16);
+  transition: all 150ms ease-in-out;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
